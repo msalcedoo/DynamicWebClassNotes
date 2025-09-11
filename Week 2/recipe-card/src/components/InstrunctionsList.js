@@ -1,9 +1,9 @@
 import './RecipeCard.css'
 
-const InstrunctionsList = (props) => {
+const InstructionsList = (props) => {
     const {data} = props
     return (
-        <div className='ingredient_list'>
+        <div className='instructions_list'>
             <h3 className='list_title'>Instructions</h3>
             <ol>
                 {data.map((item, index) => {
@@ -18,4 +18,4 @@ const InstrunctionsList = (props) => {
     )
 }
 
-export default InstrunctionsList
+export default InstructionsList

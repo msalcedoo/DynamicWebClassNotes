@@ -1,29 +1,31 @@
 import Card from "./components/Card"
 import RecipeInfo from "./components/RecipeInfo"
-import './components/RecipeCard.css'
 import IngredientList from "./components/IngredientList"
-import InstrunctionsList from "./components/InstrunctionsList"
+import InstructionsList from "./components/InstrunctionsList"
 import RecipeImg from "./components/RecipeImage"
+import './components/RecipeCard.css'
+
 import { RECIPE } from './components/recipe-data'
 
 
 const App = () => {
-    return 
-    <div>
-        <Card>
-            <RecipeImg imgSrc={RECIPE.imgSrc} />
-            <div className="card_text">
-                <RecipeInfo 
-                title={RECIPE.title} 
-                description={RECIPE.description}
-                />
-                <div className="card_lists">
-                    <IngredientList data={RECIPE.ingredients}/>
-                    <InstrunctionsList data={RECIPE.instructions}/>
+    return (
+        <div>
+            <Card>
+                <RecipeImg imgSrc={RECIPE.imgSrc} />
+                <div className="card_text">
+                    <RecipeInfo 
+                    title={RECIPE.title} 
+                    description={RECIPE.description}
+                    />
+                    <div className="card_lists">
+                        <IngredientList data={RECIPE.ingredients}/>
+                        <InstructionsList data={RECIPE.instructions}/>
+                    </div>
                 </div>
-            </div>
-        </Card>
-    </div>
+            </Card>
+        </div>
+    )
 }
 
 export default App

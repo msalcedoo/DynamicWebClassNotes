@@ -1,6 +1,5 @@
 import './RecipeCard.css'
 
-
 const RecipeInfo = (props) => {
     const {title, description} = props
 
