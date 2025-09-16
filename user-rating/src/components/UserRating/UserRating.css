@@ -1,0 +1,6 @@
+.icon {
+    fill: red;
+    flex-direction: row;
+    gap: 8px;
+    float: right;
+}
