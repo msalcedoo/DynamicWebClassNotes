@@ -38,6 +38,7 @@ function QuizPage() {
     // API request time handling
     if (loading) return <p>Loading trivia questions...</p>;
 
+
     // grabs the question based on index + all answers and randomizes their order
     const currentQ = questions[currentIndex];
     const allAnswers = [...currentQ.incorrect_answers, currentQ.correct_answer].sort(
